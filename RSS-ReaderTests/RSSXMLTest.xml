@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+    <channel>
+        <title>News : NPR</title>
+        <link>https://www.npr.org/templates/story/story.php?storyId=1001</link>
+        <description>NPR news, audio, and podcasts. Coverage of breaking stories, national and world news, politics, business, science, technology, and extended coverage of major national and world events.</description>
+        <language>en</language>
+        <copyright>Copyright 2021 NPR - For Personal Use Only</copyright>
+        <generator>NPR API RSS Generator 0.94</generator>
+        <lastBuildDate>Tue, 07 Dec 2021 03:00:58 -0500</lastBuildDate>
+        <image>
+        <url>https://media.npr.org/images/podcasts/primary/npr_generic_image_300.jpg?s=200</url>
+        <title>News</title>
+        <link>https://www.npr.org/templates/story/story.php?storyId=1001</link>
+        </image>
+        
+        <item>
+        <title>Instagram unveils new teen safety tools ahead of Senate hearing</title>
+        <description>Instagram announced the tools designed for its youngest users and their parents a day before the app's head, Adam Mosseri, testifies to the Senate about Instagram's potential risks to kids and teens.</description>
+        <pubDate>Tue, 07 Dec 2021 03:00:58 -0500</pubDate>
+        <link>https://www.npr.org/2021/12/07/1061808098/instagram-teens-safety-tools</link>
+        <guid>https://www.npr.org/2021/12/07/1061808098/instagram-teens-safety-tools</guid>
+        <content:encoded>
+        <![CDATA[ <img src='https://media.npr.org/assets/img/2021/12/06/ig-take-a-break_wide-662391f0ba0648489c0f0e721cff082248811dbd.png?s=600' alt='Instagram users can now set a reminder to take a break from the app. Users under 18 will see a special prompt encouraging them to turn it on.'/><p>Instagram announced the tools designed for its youngest users and their parents a day before the app's head, Adam Mosseri, testifies to the Senate about Instagram's potential risks to kids and teens.</p><p>(Image credit: Instagram)</p><img src='https://media.npr.org/include/images/tracking/npr-rss-pixel.png?story=1061808098' /> ]]>
+        </content:encoded>
+        <dc:creator>Shannon Bond</dc:creator>
+        </item>
+    </channel>
+</rss>
+
