@@ -11,28 +11,33 @@ import SnapKit
 
 class DetailViewController: UIViewController {
     
-    //MARK:- Outlets
-    @IBOutlet weak var webView: WKWebView!
-    @IBOutlet weak var closeButton: UIButton!
-    
     //MARK:- Variables
+    //UI
+    let webView = WKWebView()
+    let closeButton = UIButton()
+    //Code
     var link: String = ""
     
     //MARK:- ViewController LifeCycle
     override func viewDidLoad() {
         super.viewDidLoad()
-        setupConstraint()
-        setupWebView()
+        setupUI()
     }
     
     //MARK:- Actions
-    @IBAction func closeButtonTapped(_ sender: Any) {
+    @objc func closeButtonTapped(_ sender: Any) {
         self.dismiss(animated: true, completion: nil)
     }
 }
 
 //MARK:- UI Setup
 extension DetailViewController {
+    func setupUI() {
+        view.backgroundColor = .white
+        setupCloseButton()
+        setupWebView()
+        setupConstraint()
+    }
     func setupConstraint() {
         closeButton.snp.makeConstraints { make in
             make.width.equalTo(30)
@@ -49,6 +54,7 @@ extension DetailViewController {
     }
     func setupWebView() {
         webView.navigationDelegate = self
+        self.view.addSubview(webView)
         guard let url = URL(string: link) else {
             return
         }
@@ -56,6 +62,12 @@ extension DetailViewController {
         webView.load(URLRequest(url: url))
         webView.allowsBackForwardNavigationGestures = true
     }
+    func setupCloseButton() {
+        closeButton.setImage(UIImage(named: "close_icon"), for: .normal)
+        closeButton.addTarget(self, action: #selector(closeButtonTapped), for: .touchUpInside)
+        self.view.addSubview(closeButton)
+    }
+    
 }
 
 //MARK:- WebKit Delegate
@@ -68,7 +80,4 @@ extension DetailViewController: WKNavigationDelegate {
         stopAnimating()
     }
 }
-
-//MARK:- StoryBoard Initiable
-extension DetailViewController: StoryboardInitiable{}
 

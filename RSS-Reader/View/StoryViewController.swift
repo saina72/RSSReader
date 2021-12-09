@@ -11,12 +11,13 @@ import RxSwift
 
 class StoryViewController: UIViewController {
     
-    //MARK:- Outlets
-    @IBOutlet weak var tableView: UITableView!
-    
     //MARK:- Variables
+    //UI
+    let tableView = UITableView()
+    //Code
     var feedData: [RSSFeedItem] = []
     private var dataSource: FeedTableViewDataSource<FeedTableViewCell, RSSFeedItem>!
+    let detailVC: DetailViewController = DetailViewController()
     
     //MARK:- ViewController LifeCycle
     override func viewDidLoad() {
@@ -30,6 +31,7 @@ class StoryViewController: UIViewController {
 extension StoryViewController {
     func setupUIElements() {
         self.title = "Story"
+        self.view.addSubview(tableView)
         tableView.delegate = self
         tableView.register(nibName: "FeedTableViewCell")
         tableView.rowHeight = UITableView.automaticDimension
@@ -75,11 +77,8 @@ extension StoryViewController {
 //MARK:- TableView Delegate
 extension StoryViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let detailVC: DetailViewController = UIStoryboard.main.instantiateViewController()
-        detailVC.link = feedData[indexPath.row].link ?? ""
+        self.detailVC.link = feedData[indexPath.row].link ?? ""
         self.present(detailVC, animated: true, completion: nil)
     }
 }
 
-//MARK:- StoryBoard Initiable
-extension StoryViewController: StoryboardInitiable{}

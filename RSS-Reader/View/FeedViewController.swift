@@ -15,17 +15,20 @@ import SnapKit
 
 class FeedViewController: UIViewController {
     
-    //MARK:- Outlets
-    @IBOutlet weak var tableView: UITableView!
-    
     //MARK:- Variables
+    //UI
+    let tableView = UITableView()
+    //Code
     private var feedViewModel: FeedViewModel!
+    let storyVC: StoryViewController = StoryViewController()
     let disposeBag = DisposeBag()
     var feedData = PublishSubject<[Feed]>()
+    
     
     //MARK:- ViewController LifeCycle
     override func viewDidLoad() {
         super.viewDidLoad()
+        view.backgroundColor = .white
         setupUIElements()
         bindViewModel()
     }
@@ -41,7 +44,7 @@ extension FeedViewController {
             .observe(on: MainScheduler.instance)
             .bind(to: self.tableView.rx.items(cellIdentifier: "FeedTableViewCell", cellType: FeedTableViewCell.self), curriedArgument: { (row, item, cell) in
                 cell.titleLabel.text = item.title
-                cell.contentView.backgroundColor = row%4 == 0 ? UIColor.PaletteName.bgColor1.color : row%4 == 1 ? UIColor.PaletteName.bgColor2.color : row%4 == 2 ? UIColor.PaletteName.bgColor3.color : UIColor.PaletteName.bgColor4.color
+                cell.contentView.backgroundColor = UIColor.cellBackgroundColor[row%4]
                 if item.imageUrl != "" {
                     cell.imageViewHeight.constant = 200
                     cell.feedImageView?.sd_setImage(with: URL(string: item.imageUrl), placeholderImage: UIImage())
@@ -53,9 +56,9 @@ extension FeedViewController {
         
         
         tableView.rx.modelSelected(Feed.self).subscribe(onNext: { item in
-            let storyVC: StoryViewController = UIStoryboard.main.instantiateViewController()
-            storyVC.feedData = item.items
-            self.navigationController?.pushViewController(storyVC, animated: true)
+            print(item)
+            self.storyVC.feedData = item.items
+            self.navigationController?.pushViewController(self.storyVC, animated: true)
         }).disposed(by: disposeBag)
         
         self.feedViewModel.callFunctionToGetData()
@@ -66,6 +69,7 @@ extension FeedViewController {
 extension FeedViewController {
     func setupUIElements() {
         self.title = "Feed"
+        self.view.addSubview(tableView)
         tableView.register(nibName: "FeedTableViewCell")
         tableView.rowHeight = UITableView.automaticDimension
         tableView.tableFooterView = UIView()

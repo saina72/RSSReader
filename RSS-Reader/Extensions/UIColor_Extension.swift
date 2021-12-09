@@ -30,6 +30,11 @@ extension UIColor {
         }
     }
     
+    static let cellBackgroundColor: [Int : UIColor] = [0 : PaletteName.bgColor1.color,
+                                                       1 : PaletteName.bgColor2.color,
+                                                       2 : PaletteName.bgColor3.color,
+                                                       3 : PaletteName.bgColor4.color]
+    
     convenience init(hex: String) {
         let scanner = Scanner(string: hex)
         var rgbValue: UInt64 = 0

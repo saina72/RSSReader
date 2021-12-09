@@ -7,10 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		39492C762760B7A300E1EC8F /* CustomNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39492C752760B7A300E1EC8F /* CustomNavigationController.swift */; };
 		39A55CEF275A7D87003BF54C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39A55CEE275A7D87003BF54C /* AppDelegate.swift */; };
 		39A55CF1275A7D87003BF54C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39A55CF0275A7D87003BF54C /* SceneDelegate.swift */; };
 		39A55CF3275A7D87003BF54C /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39A55CF2275A7D87003BF54C /* FeedViewController.swift */; };
-		39A55CF6275A7D87003BF54C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39A55CF4275A7D87003BF54C /* Main.storyboard */; };
 		39A55CF9275A7D87003BF54C /* RSS_Reader.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 39A55CF7275A7D87003BF54C /* RSS_Reader.xcdatamodeld */; };
 		39A55CFB275A7D90003BF54C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 39A55CFA275A7D90003BF54C /* Assets.xcassets */; };
 		39A55CFE275A7D90003BF54C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39A55CFC275A7D90003BF54C /* LaunchScreen.storyboard */; };
@@ -29,9 +29,6 @@
 		39C54B1F275F4BA400FAB84A /* RSSXMLTest.xml in Resources */ = {isa = PBXBuildFile; fileRef = 39C54B1E275F4BA300FAB84A /* RSSXMLTest.xml */; };
 		39C54B2F275F66E600FAB84A /* UIViewController_Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39C54B2E275F66E600FAB84A /* UIViewController_Extension.swift */; };
 		39CBF15E275EA89E0055F601 /* StoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39CBF15D275EA89D0055F601 /* StoryViewController.swift */; };
-		39CBF161275EBBE10055F601 /* UIStoryBoard_Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39CBF160275EBBE10055F601 /* UIStoryBoard_Extension.swift */; };
-		39CBF165275EBD660055F601 /* StoryboardInitiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39CBF164275EBD660055F601 /* StoryboardInitiable.swift */; };
-		39CBF168275EBDB20055F601 /* StoryboardInitiable_Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39CBF167275EBDB20055F601 /* StoryboardInitiable_Extension.swift */; };
 		39FF571E275ECF270058A502 /* LoadingAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39FF571D275ECF270058A502 /* LoadingAnimator.swift */; };
 		5A4EAEEDF6B68A0643152F4B /* Pods_RSS_ReaderTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1E8AB26CA30851A97E88ED8 /* Pods_RSS_ReaderTests.framework */; };
 		DABAEA28B610EC2510FCBCC5 /* Pods_RSS_Reader.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47B731C8D670B22D8B0456D9 /* Pods_RSS_Reader.framework */; };
@@ -48,11 +45,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		39492C752760B7A300E1EC8F /* CustomNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavigationController.swift; sourceTree = "<group>"; };
 		39A55CEB275A7D87003BF54C /* RSS-Reader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "RSS-Reader.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		39A55CEE275A7D87003BF54C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		39A55CF0275A7D87003BF54C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		39A55CF2275A7D87003BF54C /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
-		39A55CF5275A7D87003BF54C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		39A55CF8275A7D87003BF54C /* RSS_Reader.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = RSS_Reader.xcdatamodel; sourceTree = "<group>"; };
 		39A55CFA275A7D90003BF54C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		39A55CFD275A7D90003BF54C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -74,9 +71,6 @@
 		39C54B1E275F4BA300FAB84A /* RSSXMLTest.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = RSSXMLTest.xml; sourceTree = "<group>"; };
 		39C54B2E275F66E600FAB84A /* UIViewController_Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController_Extension.swift; sourceTree = "<group>"; };
 		39CBF15D275EA89D0055F601 /* StoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryViewController.swift; sourceTree = "<group>"; };
-		39CBF160275EBBE10055F601 /* UIStoryBoard_Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIStoryBoard_Extension.swift; sourceTree = "<group>"; };
-		39CBF164275EBD660055F601 /* StoryboardInitiable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardInitiable.swift; sourceTree = "<group>"; };
-		39CBF167275EBDB20055F601 /* StoryboardInitiable_Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardInitiable_Extension.swift; sourceTree = "<group>"; };
 		39FF571D275ECF270058A502 /* LoadingAnimator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingAnimator.swift; sourceTree = "<group>"; };
 		47B731C8D670B22D8B0456D9 /* Pods_RSS_Reader.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RSS_Reader.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7606B827470F80A434F2B71C /* Pods-RSS-Reader.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RSS-Reader.release.xcconfig"; path = "Target Support Files/Pods-RSS-Reader/Pods-RSS-Reader.release.xcconfig"; sourceTree = "<group>"; };
@@ -158,7 +152,6 @@
 				39A55D0C275A94CB003BF54C /* Model */,
 				39A55CEE275A7D87003BF54C /* AppDelegate.swift */,
 				39A55CF0275A7D87003BF54C /* SceneDelegate.swift */,
-				39A55CF4275A7D87003BF54C /* Main.storyboard */,
 				39A55CFA275A7D90003BF54C /* Assets.xcassets */,
 				39A55CFC275A7D90003BF54C /* LaunchScreen.storyboard */,
 				39A55CFF275A7D90003BF54C /* Info.plist */,
@@ -207,8 +200,6 @@
 				39A55D45275CBA0C003BF54C /* UIColor_Extension.swift */,
 				39A55D48275CBD6C003BF54C /* UITableView_Extension.swift */,
 				39A55D55275CC7A2003BF54C /* Reactive_Extension.swift */,
-				39CBF160275EBBE10055F601 /* UIStoryBoard_Extension.swift */,
-				39CBF167275EBDB20055F601 /* StoryboardInitiable_Extension.swift */,
 				39C54B2E275F66E600FAB84A /* UIViewController_Extension.swift */,
 			);
 			path = Extensions;
@@ -221,6 +212,7 @@
 				39A55D58275CCA04003BF54C /* DetailViewController.swift */,
 				39A55CF2275A7D87003BF54C /* FeedViewController.swift */,
 				39CBF15D275EA89D0055F601 /* StoryViewController.swift */,
+				39492C752760B7A300E1EC8F /* CustomNavigationController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -238,7 +230,6 @@
 		39CBF163275EBD420055F601 /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
-				39CBF164275EBD660055F601 /* StoryboardInitiable.swift */,
 				39FF571D275ECF270058A502 /* LoadingAnimator.swift */,
 			);
 			path = Protocols;
@@ -339,7 +330,6 @@
 				39A55CFE275A7D90003BF54C /* LaunchScreen.storyboard in Resources */,
 				39A55D1D275A9B83003BF54C /* FeedTableViewCell.xib in Resources */,
 				39A55CFB275A7D90003BF54C /* Assets.xcassets in Resources */,
-				39A55CF6275A7D87003BF54C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -445,16 +435,14 @@
 				39A55D46275CBA0C003BF54C /* UIColor_Extension.swift in Sources */,
 				39C54B2F275F66E600FAB84A /* UIViewController_Extension.swift in Sources */,
 				39A55D49275CBD6D003BF54C /* UITableView_Extension.swift in Sources */,
+				39492C762760B7A300E1EC8F /* CustomNavigationController.swift in Sources */,
 				39A55D56275CC7A2003BF54C /* Reactive_Extension.swift in Sources */,
-				39CBF168275EBDB20055F601 /* StoryboardInitiable_Extension.swift in Sources */,
 				39A55D19275A9B26003BF54C /* FeedTableViewDataSource.swift in Sources */,
 				39A55CF3275A7D87003BF54C /* FeedViewController.swift in Sources */,
 				39FF571E275ECF270058A502 /* LoadingAnimator.swift in Sources */,
 				39A55D12275A967D003BF54C /* FeedViewModel.swift in Sources */,
 				39A55D2C275B7738003BF54C /* LoadingAnimator_Extension.swift in Sources */,
-				39CBF161275EBBE10055F601 /* UIStoryBoard_Extension.swift in Sources */,
 				39A55CF9275A7D87003BF54C /* RSS_Reader.xcdatamodeld in Sources */,
-				39CBF165275EBD660055F601 /* StoryboardInitiable.swift in Sources */,
 				39A55CEF275A7D87003BF54C /* AppDelegate.swift in Sources */,
 				39A55D20275A9B9E003BF54C /* FeedTableViewCell.swift in Sources */,
 				39A55CF1275A7D87003BF54C /* SceneDelegate.swift in Sources */,
@@ -481,14 +469,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		39A55CF4275A7D87003BF54C /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				39A55CF5275A7D87003BF54C /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		39A55CFC275A7D90003BF54C /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
